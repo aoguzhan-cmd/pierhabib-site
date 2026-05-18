@@ -45,14 +45,28 @@ export default function App() {
     <div>
       {/* NAV */}
       <nav style={{ background: '#fff', borderBottom: '1px solid #e8e4dc', padding: '16px 40px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'sticky', top: 0, zIndex: 100 }}>
-        <div>
-          <span style={{ fontSize: 14, fontWeight: 700, letterSpacing: 4, color: LACIVERT, textTransform: 'uppercase' }}>Pier Habib</span>
-          <span style={{ fontSize: 10, letterSpacing: 3, color: '#94a3b8', display: 'block', marginTop: 2, fontFamily: 'Arial, sans-serif' }}>Süt Baklava — İstanbul</span>
-        </div>
-        <button onClick={scrollToForm} style={{ background: LACIVERT, color: '#fff', border: 'none', padding: '10px 24px', borderRadius: 4, fontSize: 12, letterSpacing: 2, cursor: 'pointer', fontFamily: 'Georgia, serif', textTransform: 'uppercase' }}>
-          Bayilik Başvurusu
-        </button>
-      </nav>
+  <div>
+    <span style={{ fontSize: 14, fontWeight: 700, letterSpacing: 4, color: LACIVERT, textTransform: 'uppercase' }}>Pier Habib</span>
+    <span style={{ fontSize: 10, letterSpacing: 3, color: '#94a3b8', display: 'block', marginTop: 2, fontFamily: 'Arial, sans-serif' }}>Süt Baklava — İstanbul</span>
+  </div>
+  <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+    <div style={{ display: 'flex', gap: 8 }}>
+      {[
+        { ad: 'Yemek Sepeti', link: 'https://www.yemeksepeti.com/restaurant/jbbf/pier-habib-sut-baklava-jbbf?srsltid=AfmBOooub_Jz2wOlQOFYJfs6MvLNZ5qcLP3z9swbTOuhwW5px0gBUEeH', renk: '#e60026' },
+        { ad: 'Getir', link: 'https://getir.com/yemek/restoran/pier-habib-sut-baklava-sinanpasa-mah-besiktas-istanbul/', renk: '#5c3ebc' },
+        { ad: 'FineDine', link: 'https://qr.finedinemenu.com/pier-habib/menu/6076a008884d1e00146856ad', renk: '#1a1a2e' },
+      ].map((k) => (
+        <a key={k.ad} href={k.link} target="_blank" rel="noreferrer"
+          style={{ fontSize: 11, padding: '6px 12px', borderRadius: 20, border: `1px solid ${k.renk}`, color: k.renk, textDecoration: 'none', fontFamily: 'Arial, sans-serif', fontWeight: 600, letterSpacing: 0.5 }}>
+          {k.ad}
+        </a>
+      ))}
+    </div>
+    <button onClick={scrollToForm} style={{ background: LACIVERT, color: '#fff', border: 'none', padding: '10px 24px', borderRadius: 4, fontSize: 12, letterSpacing: 2, cursor: 'pointer', fontFamily: 'Georgia, serif', textTransform: 'uppercase' }}>
+      Bayilik Başvurusu
+    </button>
+  </div>
+</nav>
 
       {/* HERO */}
       <section style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', height: '85vh' }}>
