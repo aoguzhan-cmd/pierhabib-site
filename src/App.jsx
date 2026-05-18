@@ -17,6 +17,7 @@ const DILLER = {
       { icon: '📈', baslik: 'Büyüyen Marka', aciklama: "İstanbul'dan Türkiye'ye uzanan büyüme hikayesinde yerinizi alın." },
     ],
     hikaye: { etiket: 'Hikayemiz', baslik: "İstanbul'dan\nTürkiye'ye", metin: "Pier Habib, İstanbul'un kalbinden doğan özgün bir lezzet markasıdır. Geleneksel tarifleri modern anlayışla buluşturarak Türkiye'nin dört bir yanına ulaşmayı hedefliyoruz." },
+    yorumlar: { baslik: 'Müşteri Yorumları', altyazi: '4.5 yıldız · 421 yorum · Google' },
     form: { baslik: 'Bayilik Başvurusu', alt: 'Formu doldurun, en kısa sürede sizinle iletişime geçelim', ad: 'Ad', soyad: 'Soyad', telefon: 'Telefon', eposta: 'E-posta', sehir: 'Bayilik Düşündüğünüz Şehir / Bölge', deneyim: 'Mevcut İş Deneyiminiz', mesaj: 'Mesajınız', gonder: 'Başvuru Gönder', yukleniyor: 'Gönderiliyor...', zorunlu: 'Lütfen zorunlu alanları doldurun.', hata: 'Bir hata oluştu, lütfen tekrar deneyin.' },
     basari: { baslik: 'Başvurunuz Alındı', metin: 'En kısa sürede sizinle iletişime geçeceğiz.', imza: '— Pier Habib Ekibi' },
     footer: '© 2026 Pier Habib Süt Baklava — İstanbul',
@@ -32,6 +33,7 @@ const DILLER = {
       { icon: '📈', baslik: 'Growing Brand', aciklama: 'Join our growing story expanding from Istanbul across Turkey.' },
     ],
     hikaye: { etiket: 'Our Story', baslik: "From Istanbul\nto Turkey", metin: 'Pier Habib is a unique flavor brand born in the heart of Istanbul. We bring traditional recipes with a modern touch to every corner of Turkey.' },
+    yorumlar: { baslik: 'Customer Reviews', altyazi: '4.5 stars · 421 reviews · Google' },
     form: { baslik: 'Franchise Application', alt: 'Fill out the form and we will contact you shortly', ad: 'First Name', soyad: 'Last Name', telefon: 'Phone', eposta: 'Email', sehir: 'City / Region for Franchise', deneyim: 'Business Experience', mesaj: 'Your Message', gonder: 'Submit Application', yukleniyor: 'Sending...', zorunlu: 'Please fill in the required fields.', hata: 'An error occurred, please try again.' },
     basari: { baslik: 'Application Received', metin: 'We will contact you as soon as possible.', imza: '— Pier Habib Team' },
     footer: '© 2026 Pier Habib Milk Baklava — Istanbul',
@@ -47,6 +49,7 @@ const DILLER = {
       { icon: '📈', baslik: 'علامة في نمو', aciklama: 'انضم إلى قصة نجاحنا الممتدة من إسطنبول إلى جميع أنحاء تركيا.' },
     ],
     hikaye: { etiket: 'قصتنا', baslik: "من إسطنبول\nإلى تركيا", metin: 'Pier Habib علامة تجارية فريدة ولدت في قلب إسطنبول. نهدف إلى الجمع بين الوصفات التقليدية والأسلوب العصري للوصول إلى كل ركن من أركان تركيا.' },
+    yorumlar: { baslik: 'آراء العملاء', altyazi: '4.5 نجوم · 421 تقييم · Google' },
     form: { baslik: 'طلب الامتياز', alt: 'أكمل النموذج وسنتواصل معك في أقرب وقت', ad: 'الاسم الأول', soyad: 'اسم العائلة', telefon: 'الهاتف', eposta: 'البريد الإلكتروني', sehir: 'المدينة / المنطقة المرغوبة', deneyim: 'الخبرة التجارية', mesaj: 'رسالتك', gonder: 'إرسال الطلب', yukleniyor: 'جارٍ الإرسال...', zorunlu: 'يرجى ملء الحقول المطلوبة.', hata: 'حدث خطأ، يرجى المحاولة مرة أخرى.' },
     basari: { baslik: 'تم استلام طلبك', metin: 'سنتواصل معك في أقرب وقت ممكن.', imza: '— فريق Pier Habib' },
     footer: '© 2026 Pier Habib بقلاوة بالحليب — إسطنبول',
@@ -54,10 +57,65 @@ const DILLER = {
 }
 
 const KANALLAR = [
-  { ad: 'Yemek Sepeti', link: 'https://www.yemeksepeti.com/restaurant/jbbf/pier-habib-sut-baklava-jbbf?srsltid=AfmBOooub_Jz2wOlQOFYJfs6MvLNZ5qcLP3z9swbTOuhwW5px0gBUEeH', renk: '#e60026' },
-        { ad: 'Getir', link: 'https://getir.com/yemek/restoran/pier-habib-sut-baklava-sinanpasa-mah-besiktas-istanbul/', renk: '#5c3ebc' },
-        { ad: 'FineDine', link: 'https://qr.finedinemenu.com/pier-habib/menu/6076a008884d1e00146856ad', renk: '#1a1a2e' },
+  { ad: 'Yemek Sepeti', link: 'https://www.yemeksepeti.com/restaurant/jbbf/pier-habib-sut-baklava-jbbf', renk: '#e60026' },
+  { ad: 'Getir', link: 'https://getir.com/yemek/restoran/pier-habib-sut-baklava-sinanpasa-mah-besiktas-istanbul/', renk: '#5c3ebc' },
+  { ad: 'FineDine', link: 'https://qr.finedinemenu.com/pier-habib/menu/6076a008884d1e00146856ad', renk: '#1a1a2e' },
 ]
+
+const YORUMLAR = [
+  { isim: 'T. R.', sure: '3 ay önce', yildiz: 5, yorum: 'Found this place walking around the area, and tried both the classic baklava and the cold one. They are one of the best baklavas I\'ve had. Incredible fresh, flaky and crunchy on top with a nice pistachio flavor. Definitely recommend.' },
+  { isim: 'T. F.', sure: '4 ay önce', yildiz: 5, yorum: 'This is one of my favourite spots, the staff are also very friendly and helpful. The cold milky baklava is also amazing! I highly recommend this place.' },
+  { isim: 'Z. Ö.', sure: '5 ay önce', yildiz: 5, yorum: 'Benim hayatımda yediğim EN İYİ SOĞUK BAKLAVA. Tartışmaya da kapalı. Keşke biraz daha büyüyüp Ankaraya da şube açsalar. Bu kadar başarılı bir ürünü herkesin tatması lazım.' },
+  { isim: 'N. T.', sure: '3 ay önce', yildiz: 5, yorum: 'Lezzetler harika, özellikle fıstıklı sahlep ve fıstıklı ruloyu denemek için gittik ve bayıldık. Çalışanlar da çok ilgili ve kibardılar. Her şeyiyle 10/10 bir mekan.' },
+  { isim: 'd.', sure: '2 ay önce', yildiz: 5, yorum: 'tiktoktan görüp denedik inanılmaz iyiydi özellikle tahinliye bayıldık, fıstıklı sahlep de asla ağır gelmedi, sütü dondurma gibiydi. Şiddetle tavsiye ediyoruz 🙌' },
+  { isim: 'B. E.', sure: '2 ay önce', yildiz: 5, yorum: 'Yeni ürünleri olan fıstıklı ruloyu çok sevdim, ince ve çıtır. Fındıklı & tahinli baklavayı da sevdik. Fıstıklı sahlep de kış aylarının favorisi olur ✨' },
+  { isim: 'G. K.', sure: '4 ay önce', yildiz: 5, yorum: 'Uzun zamandır gitmeyi planladığım bir yerdi. Çalışanlar çok yardımsever, ürünlerin hepsini tanıttılar. Bundan sonra canım ne çekerse buradan alacağım, kesinlikle tavsiye ederim 🫶🏻' },
+]
+
+// Slider CSS animasyonu
+const sliderStyle = `
+  @keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .yorum-track {
+    display: flex;
+    animation: scrollLeft 28s linear infinite;
+    width: max-content;
+  }
+  .yorum-track:hover {
+    animation-play-state: paused;
+  }
+`
+
+function YorumSlider({ t }) {
+  const tekrar = [...YORUMLAR, ...YORUMLAR]
+  return (
+    <section style={{ padding: '80px 0', background: LACIVERT, overflow: 'hidden' }}>
+      <style>{sliderStyle}</style>
+      <h2 style={{ textAlign: 'center', fontSize: 28, color: '#fff', letterSpacing: 2, marginBottom: 8, fontWeight: 400, fontFamily: 'Georgia, serif' }}>{t.yorumlar.baslik}</h2>
+      <div style={{ textAlign: 'center', marginBottom: 40 }}>
+        <span style={{ color: ALTIN, fontSize: 18 }}>★★★★★</span>
+        <span style={{ color: '#a8c4e0', fontSize: 13, marginLeft: 10, fontFamily: 'Arial, sans-serif' }}>{t.yorumlar.altyazi}</span>
+      </div>
+      <div style={{ overflow: 'hidden' }}>
+        <div className="yorum-track">
+          {tekrar.map((y, i) => (
+            <div key={i} style={{ width: 320, flexShrink: 0, margin: '0 12px', background: 'rgba(255,255,255,0.07)', borderRadius: 12, padding: '24px', border: '1px solid rgba(255,255,255,0.12)' }}>
+              <div style={{ color: ALTIN, fontSize: 14, marginBottom: 12 }}>{'★'.repeat(y.yildiz)}</div>
+              <p style={{ fontSize: 13, color: '#e2e8f0', lineHeight: 1.7, fontFamily: 'Arial, sans-serif', marginBottom: 16, minHeight: 80 }}>"{y.yorum}"</p>
+              <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <span style={{ fontSize: 13, fontWeight: 700, color: '#fff' }}>{y.isim}</span>
+                <span style={{ fontSize: 11, color: '#94a3b8', fontFamily: 'Arial, sans-serif' }}>{y.sure}</span>
+              </div>
+              <div style={{ marginTop: 8, fontSize: 11, color: '#64748b', fontFamily: 'Arial, sans-serif' }}>Google ★</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export default function App() {
   const [dil, setDil] = useState('tr')
@@ -110,9 +168,7 @@ export default function App() {
           <span style={{ fontSize: 14, fontWeight: 700, letterSpacing: 4, color: LACIVERT, textTransform: 'uppercase', fontFamily: 'Georgia, serif' }}>{t.nav.marka}</span>
           <span style={{ fontSize: 10, letterSpacing: 2, color: '#94a3b8', display: 'block', marginTop: 2 }}>{t.nav.alt}</span>
         </div>
-
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          {/* Online Siparişler */}
           <div style={{ position: 'relative' }}>
             <button onClick={() => { setKanalMenuAcik(!kanalMenuAcik); setDilMenuAcik(false) }}
               style={{ background: 'transparent', color: LACIVERT, border: `1px solid ${LACIVERT}`, padding: '8px 14px', borderRadius: 4, fontSize: 11, letterSpacing: 1, cursor: 'pointer', textTransform: 'uppercase' }}>
@@ -129,13 +185,9 @@ export default function App() {
               </div>
             )}
           </div>
-
-          {/* Bayilik */}
           <button onClick={scrollToForm} style={{ background: LACIVERT, color: '#fff', border: 'none', padding: '8px 18px', borderRadius: 4, fontSize: 11, letterSpacing: 1, cursor: 'pointer', textTransform: 'uppercase' }}>
             {t.nav.basvuru}
           </button>
-
-          {/* Dil */}
           <div style={{ position: 'relative' }}>
             <button onClick={() => { setDilMenuAcik(!dilMenuAcik); setKanalMenuAcik(false) }}
               style={{ background: '#f8fafc', color: LACIVERT, border: '1px solid #e2e8f0', padding: '8px 12px', borderRadius: 4, fontSize: 12, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6 }}>
@@ -191,6 +243,9 @@ export default function App() {
         </div>
       </section>
 
+      {/* KAYAN YORUMLAR */}
+      <YorumSlider t={t} />
+
       {/* HİKAYE */}
       <section style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', height: 480, direction: t.yon }}>
         {!rtl && (
@@ -215,7 +270,6 @@ export default function App() {
         <h2 style={{ textAlign: 'center', fontSize: 28, color: LACIVERT, letterSpacing: 2, marginBottom: 8, fontWeight: 400, fontFamily: 'Georgia, serif' }}>{t.form.baslik}</h2>
         <div style={{ width: 60, height: 1, background: ALTIN, margin: '16px auto 24px' }} />
         <p style={{ textAlign: 'center', fontSize: 13, color: '#94a3b8', marginBottom: 48 }}>{t.form.alt}</p>
-
         {gonderildi ? (
           <div style={{ textAlign: 'center', padding: 60, background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: 8, color: '#166534' }}>
             <div style={{ fontSize: 40, marginBottom: 16 }}>✓</div>
@@ -226,38 +280,16 @@ export default function App() {
         ) : (
           <form onSubmit={gonder} dir={t.yon}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
-              <div>
-                <label style={labelStil}>{t.form.ad} *</label>
-                <input value={form.ad} onChange={e => setForm({ ...form, ad: e.target.value })} style={inputStil} />
-              </div>
-              <div>
-                <label style={labelStil}>{t.form.soyad} *</label>
-                <input value={form.soyad} onChange={e => setForm({ ...form, soyad: e.target.value })} style={inputStil} />
-              </div>
+              <div><label style={labelStil}>{t.form.ad} *</label><input value={form.ad} onChange={e => setForm({ ...form, ad: e.target.value })} style={inputStil} /></div>
+              <div><label style={labelStil}>{t.form.soyad} *</label><input value={form.soyad} onChange={e => setForm({ ...form, soyad: e.target.value })} style={inputStil} /></div>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
-              <div>
-                <label style={labelStil}>{t.form.telefon} *</label>
-                <input value={form.telefon} onChange={e => setForm({ ...form, telefon: e.target.value })} style={inputStil} />
-              </div>
-              <div>
-                <label style={labelStil}>{t.form.eposta}</label>
-                <input value={form.eposta} onChange={e => setForm({ ...form, eposta: e.target.value })} type="email" style={inputStil} />
-              </div>
+              <div><label style={labelStil}>{t.form.telefon} *</label><input value={form.telefon} onChange={e => setForm({ ...form, telefon: e.target.value })} style={inputStil} /></div>
+              <div><label style={labelStil}>{t.form.eposta}</label><input value={form.eposta} onChange={e => setForm({ ...form, eposta: e.target.value })} type="email" style={inputStil} /></div>
             </div>
-            <div style={{ marginBottom: 16 }}>
-              <label style={labelStil}>{t.form.sehir} *</label>
-              <input value={form.sehir} onChange={e => setForm({ ...form, sehir: e.target.value })} style={inputStil} />
-            </div>
-            <div style={{ marginBottom: 16 }}>
-              <label style={labelStil}>{t.form.deneyim}</label>
-              <input value={form.deneyim} onChange={e => setForm({ ...form, deneyim: e.target.value })} style={inputStil} />
-            </div>
-            <div style={{ marginBottom: 24 }}>
-              <label style={labelStil}>{t.form.mesaj}</label>
-              <textarea value={form.mesaj} onChange={e => setForm({ ...form, mesaj: e.target.value })}
-                style={{ ...inputStil, minHeight: 120, resize: 'vertical' }} />
-            </div>
+            <div style={{ marginBottom: 16 }}><label style={labelStil}>{t.form.sehir} *</label><input value={form.sehir} onChange={e => setForm({ ...form, sehir: e.target.value })} style={inputStil} /></div>
+            <div style={{ marginBottom: 16 }}><label style={labelStil}>{t.form.deneyim}</label><input value={form.deneyim} onChange={e => setForm({ ...form, deneyim: e.target.value })} style={inputStil} /></div>
+            <div style={{ marginBottom: 24 }}><label style={labelStil}>{t.form.mesaj}</label><textarea value={form.mesaj} onChange={e => setForm({ ...form, mesaj: e.target.value })} style={{ ...inputStil, minHeight: 120, resize: 'vertical' }} /></div>
             {hata && <p style={{ color: '#ef4444', fontSize: 13, marginBottom: 16 }}>{hata}</p>}
             <button type="submit" disabled={yukleniyor} style={{ width: '100%', background: yukleniyor ? '#94a3b8' : LACIVERT, color: '#fff', border: 'none', padding: 16, fontSize: 12, letterSpacing: 2, textTransform: 'uppercase', cursor: yukleniyor ? 'not-allowed' : 'pointer', borderRadius: 2 }}>
               {yukleniyor ? t.form.yukleniyor : t.form.gonder}
