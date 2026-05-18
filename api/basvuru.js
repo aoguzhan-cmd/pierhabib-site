@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: 'Pier Habib Bayilik <onboarding@resend.dev>',
-      to: [process.env.BASVURU_MAIL],
+      to: ['ahmetoguzhansenturk@gmail.com'],
       subject: `Yeni Bayilik Başvurusu — ${ad} ${soyad} / ${sehir}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
