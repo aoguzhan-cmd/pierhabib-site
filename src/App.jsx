@@ -84,7 +84,7 @@ export default function App() {
       <section style={{ padding: '80px 40px', background: '#fff' }}>
         <h2 style={{ textAlign: 'center', fontSize: 28, color: LACIVERT, letterSpacing: 2, marginBottom: 8, fontWeight: 400 }}>Neden Pier Habib?</h2>
         <p style={{ textAlign: 'center', fontSize: 13, color: '#94a3b8', letterSpacing: 1, marginBottom: 60, fontFamily: 'Arial, sans-serif' }}>
-          Güçlü bir marka, güçlü bir ortaklık
+          Güçlü bir marka...
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, maxWidth: 900, margin: '0 auto' }}>
           {[
