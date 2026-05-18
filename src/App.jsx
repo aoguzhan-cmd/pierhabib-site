@@ -504,7 +504,7 @@ export default function App() {
           <div>
             <div style={{ fontSize: 11, letterSpacing: 3, color: ALTIN, textTransform: 'uppercase', marginBottom: 20 }}>{t.iletisim.baslik}</div>
             <p style={{ fontSize: 13, color: '#a8c4e0', lineHeight: 1.7, marginBottom: 10 }}>Şair Nedim Cd. No:42/A<br />Beşiktaş, İstanbul</p>
-            <a href="mailto:xxxxxxxxx" style={{ display: 'block', fontSize: 13, color: '#a8c4e0', textDecoration: 'none', marginBottom: 6 }}>mail@pierhabib.com.tr</a>
+            <a href="mailto:xxxxxxxxx" style={{ display: 'block', fontSize: 13, color: '#a8c4e0', textDecoration: 'none', marginBottom: 6 }}>xxxxxxxx</a>
             <a href="tel:+90XXXXXXXXXX" style={{ display: 'block', fontSize: 13, color: '#a8c4e0', textDecoration: 'none' }}>+90 XXX XXX XX XX</a>
           </div>
         </div>
