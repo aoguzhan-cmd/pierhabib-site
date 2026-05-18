@@ -13,7 +13,7 @@ export default async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: 'Pier Habib Bayilik onboarding@resend.dev>',
+      from: 'Pier Habib Bayilik <onboarding@resend.dev>',
       to: [process.env.BASVURU_MAIL],
       subject: `Yeni Bayilik Başvurusu — ${ad} ${soyad} / ${sehir}`,
       html: `
