@@ -69,13 +69,13 @@ const KANALLAR = [
 ]
 
 const YORUMLAR = [
-  { isim: 'Tomas Rodriguez', sure: '3 ay önce', yorum: "Found this place walking around the area. They are one of the best baklavas I've had. Incredible fresh, flaky and crunchy with a nice pistachio flavor. Definitely recommend." },
-  { isim: 'Tanya Fernandez', sure: '4 ay önce', yorum: 'This is one of my favourite spots, the staff are very friendly and helpful. The cold milky baklava is also amazing! I highly recommend this place.' },
-  { isim: 'Zeynep Özşahin', sure: '5 ay önce', yorum: 'Benim hayatımda yediğim EN İYİ SOĞUK BAKLAVA. Tartışmaya da kapalı. Keşke Ankaraya da şube açsalar. Bu kadar başarılı bir ürünü herkesin tatması lazım.' },
-  { isim: 'Nisa Tekin', sure: '3 ay önce', yorum: 'Lezzetler harika, özellikle fıstıklı sahlep ve fıstıklı ruloyu denemek için gittik ve bayıldık. Çalışanlar da çok ilgili ve kibardılar. Her şeyiyle 10/10.' },
-  { isim: 'damla', sure: '2 ay önce', yorum: 'tiktoktan görüp denedik inanılmaz iyiydi özellikle tahinliye bayıldık, fıstıklı sahlep de asla ağır gelmedi. Şiddetle tavsiye ediyoruz 🙌' },
-  { isim: 'Begüm Erenoğlu', sure: '2 ay önce', yorum: 'Yeni ürünleri olan fıstıklı ruloyu çok sevdim, ince ve çıtır. Fındıklı & tahinli baklavayı da sevdik. Fıstıklı sahlep kış favorisi olur ✨' },
-  { isim: 'Gizem Karakuş', sure: '4 ay önce', yorum: 'Çalışanlar çok yardımsever, ürünlerin hepsini tanıttılar. Bundan sonra canım ne çekerse buradan alacağım, kesinlikle tavsiye ederim 🫶🏻' },
+  { isim: 'T. R.', sure: '3 ay önce', yorum: "Found this place walking around the area. They are one of the best baklavas I've had. Incredible fresh, flaky and crunchy with a nice pistachio flavor. Definitely recommend." },
+  { isim: 'T. F.', sure: '4 ay önce', yorum: 'This is one of my favourite spots, the staff are very friendly and helpful. The cold milky baklava is also amazing! I highly recommend this place.' },
+  { isim: 'Z. Ö.', sure: '5 ay önce', yorum: 'Benim hayatımda yediğim EN İYİ SOĞUK BAKLAVA. Tartışmaya da kapalı. Keşke Ankaraya da şube açsalar. Bu kadar başarılı bir ürünü herkesin tatması lazım.' },
+  { isim: 'N. T.', sure: '3 ay önce', yorum: 'Lezzetler harika, özellikle fıstıklı sahlep ve fıstıklı ruloyu denemek için gittik ve bayıldık. Çalışanlar da çok ilgili ve kibardılar. Her şeyiyle 10/10.' },
+  { isim: 'd.', sure: '2 ay önce', yorum: 'tiktoktan görüp denedik inanılmaz iyiydi özellikle tahinliye bayıldık, fıstıklı sahlep de asla ağır gelmedi. Şiddetle tavsiye ediyoruz 🙌' },
+  { isim: 'B. E.', sure: '2 ay önce', yorum: 'Yeni ürünleri olan fıstıklı ruloyu çok sevdim, ince ve çıtır. Fındıklı & tahinli baklavayı da sevdik. Fıstıklı sahlep kış favorisi olur ✨' },
+  { isim: 'G. K.', sure: '4 ay önce', yorum: 'Çalışanlar çok yardımsever, ürünlerin hepsini tanıttılar. Bundan sonra canım ne çekerse buradan alacağım, kesinlikle tavsiye ederim 🫶🏻' },
 ]
 
 const SUBELER = [
@@ -404,7 +404,7 @@ export default function App() {
             </div>
             <div style={{ marginBottom: 24 }}>
               <div style={{ fontSize: 11, letterSpacing: 2, color: ALTIN, textTransform: 'uppercase', marginBottom: 8 }}>{t.iletisim.mail}</div>
-              <a href="mailto:mail@pierhabib.com.tr" style={{ fontSize: 14, color: LACIVERT, textDecoration: 'none', fontWeight: 600 }}>mail@pierhabib.com.tr</a>
+              <a href="mailto:- " style={{ fontSize: 14, color: LACIVERT, textDecoration: 'none', fontWeight: 600 }}>mail@pierhabib.com.tr</a>
             </div>
             <div style={{ marginBottom: 24 }}>
               <div style={{ fontSize: 11, letterSpacing: 2, color: ALTIN, textTransform: 'uppercase', marginBottom: 8 }}>{t.iletisim.tel}</div>
