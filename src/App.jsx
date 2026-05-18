@@ -76,7 +76,7 @@ export default function App() {
 
         {/* Sağ — fotoğraf */}
         <div style={{ overflow: 'hidden', height: '85vh' }}>
-          <img src="/dukkan.jpeg" alt="Pier Habib Dükkan" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }} />
+          <img src="/dukkan.jpg" alt="Pier Habib Dükkan" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }} />
         </div>
       </section>
 
@@ -88,9 +88,9 @@ export default function App() {
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, maxWidth: 900, margin: '0 auto' }}>
           {[
-            { icon: '🏆', baslik: 'Özgün Lezzet', aciklama: 'Buraya bir açıklama yazılacak. Pier Habib\'in özgün reçetesi ve kalite standartları.' },
-            { icon: '🤝', baslik: 'Tam Destek', aciklama: 'Buraya bir açıklama yazılacak. Bayilerimize sağladığımız eğitim ve operasyonel destek.' },
-            { icon: '📈', baslik: 'Büyüyen Marka', aciklama: 'Buraya bir açıklama yazılacak. Pier Habib\'in büyüme hikayesi ve bayilik avantajları.' },
+            { icon: '🏆', baslik: 'Özgün Lezzet', aciklama: 'Pier Habib\'in özgün reçetesi ve kalite standartları.' },
+            { icon: '🤝', baslik: 'Tam Destek', aciklama: 'Bayilerimize sağladığımız eğitim ve operasyonel destek.' },
+            { icon: '📈', baslik: 'Büyüyen Marka', aciklama: 'Pier Habib\'in büyüme hikayesi ve bayilik avantajları.' },
           ].map((f, i) => (
             <div key={i} style={{ textAlign: 'center', padding: '40px 24px', border: '1px solid #e8e4dc', borderRadius: 4 }}>
               <div style={{ fontSize: 36, marginBottom: 16 }}>{f.icon}</div>
@@ -105,14 +105,14 @@ export default function App() {
       <section style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', height: 480 }}>
         {/* Sol — fotoğraf */}
         <div style={{ overflow: 'hidden', height: 480 }}>
-          <img src="/hikaye.jpeg" alt="Pier Habib" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
+          <img src="/hikaye.jpg" alt="Pier Habib" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
         </div>
         {/* Sağ — metin */}
         <div style={{ background: KREM2, padding: '60px 60px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <p style={{ fontSize: 11, letterSpacing: 4, color: ALTIN, textTransform: 'uppercase', marginBottom: 20, fontFamily: 'Arial, sans-serif' }}>Hikayemiz</p>
           <h2 style={{ fontSize: 32, color: LACIVERT, marginBottom: 24, fontWeight: 400, lineHeight: 1.4 }}>İstanbul'dan<br />Türkiye'ye</h2>
           <p style={{ fontSize: 14, color: '#64748b', lineHeight: 1.9, fontFamily: 'Arial, sans-serif' }}>
-            Buraya bir açıklama yazılacak. Pier Habib'in kuruluş hikayesi, vizyonu ve Türkiye genelinde büyüme hedefleri hakkında kısa bir metin buraya gelecek.
+            Pier Habib, İstanbul'un kalbinde doğdu. Geleneksel süt baklavasını modern bir dokunuşla yorumlayarak, kısa sürede şehrin en özel lezzet noktalarından biri haline geldi. Şimdi ise bu eşsiz deneyimi Türkiye'nin dört bir yanına taşımak istiyoruz. Bayilik fırsatımızla, siz de bu büyüleyici yolculuğun bir parçası olun.
           </p>
         </div>
       </section>
